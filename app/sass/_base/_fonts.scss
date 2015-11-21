@@ -1,0 +1,5 @@
+// Main fonts
+@include font-face( 'RobotoRegular', '#{$path-fonts}Roboto-Regular', normal, normal, eot svg ttf woff);
+@include font-face( 'RobotoMedium', '#{$path-fonts}Roboto-Medium', normal, normal, eot svg ttf woff);
+@include font-face( 'RobotoLight', '#{$path-fonts}Roboto-Light', normal, normal, eot svg ttf woff);
+@include font-face( 'TimesNewRomanItalic', '#{$path-fonts}TimesNewRoman-Italic', normal, normal, eot svg ttf woff);

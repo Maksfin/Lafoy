@@ -1,0 +1,137 @@
+// .header-top {
+// 	position: relative;
+// 	height: 62px;
+// 	border-bottom: 1px solid #e8e8e8;
+// 	@include clearfix;
+// }
+
+.header-top__left {
+	float:left;
+}
+
+.burger {
+	@include inlineblock(top);
+	position: relative;
+	width: 61px;
+	height: 62px;
+	border-right: 1px solid #e8e8e8;
+}
+
+.burger__icon {
+	@include center;
+	@include get-sprite($general-sprite, burger); 
+}
+
+.logo {
+	margin: 13px 0 0 20px;
+	@include inlineblock(top);
+}
+
+.logo__img {
+	display: block;
+	max-width: 88px;
+}
+
+.logo__text {
+	position: absolute;
+	top: 0;
+	left: -99999px;
+}
+
+
+.nav-top__list {
+	margin: 0 auto;
+	width: 38%;
+	height:62px;
+	text-align:justify;
+
+	&:after {
+		content:'';
+		display: inline-block;
+		width:100%;
+	}
+}
+
+.nav-top__item {
+	@include inlineblock(middle);
+	text-transform:uppercase;
+}
+
+.nav-top__link {
+	display: block;
+	height:62px;
+	line-height: 62px;
+	font-family: $font-medium;
+	color: $main_black_text;
+	@include transition(.4s);
+
+	&:hover {
+		color: $main_gold_line;
+	}
+
+	&_active {
+		border-bottom: 3px solid $main_gold_line;
+		cursor:default;
+
+		&:hover {
+			color: $main_black_text;
+		}
+	}
+}
+
+.seach{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 62px;
+	border-left: 1px solid #e8e8e8;
+
+	&:after {
+		content: '';
+		display: block;
+		@include center;
+		@include get-sprite($general-sprite, seach);
+	}
+
+	&:hover {
+		&:after {
+			@include get-sprite($general-sprite, seach_hover);
+		}
+	}
+
+	&_active	{
+		&:after {
+			@include get-sprite($general-sprite, seach_hover);
+		}
+	}
+}
+.form {
+	height: 95px;
+	background-color: #626262;
+	color: #fff;
+}
+
+.form__seach {
+	background: transparent;
+   border: none;
+   outline: none;
+   width: 88%;
+   height: 95px;
+   line-height: 95px;
+   font-family: $font-light;
+   font-size: $font-size_main + 25px;
+   padding: 0 61px;
+}
+
+.form__submit {
+	float: right;
+	border: none;
+   outline: none;
+   width: 82px;
+   height: 95px;
+   font-family: $font-medium;
+   font-size: $font-size_main + 1px;
+   background-color: #626262;
+}
