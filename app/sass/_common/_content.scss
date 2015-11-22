@@ -1,6 +1,7 @@
 .content-wrapper {
 	margin-top: 40px;
 	text-align: center;
+	margin-bottom: 70px;
 }
 
 .content__title {
@@ -40,6 +41,11 @@
 		margin-bottom: 17px;
 	}
 
+	&_circle-bottom {
+		@extend .posts__link_circle;
+		width: 64%;
+	}
+
 	&:hover {
 		opacity: 0.75;
 	}
@@ -75,6 +81,7 @@
 	color: #8a8a8a;
 	font-size: $font-size_main - 1px;
 	float: right;
+	padding-top: 6px;
 
 	&:before{
 		content:'';
@@ -85,15 +92,18 @@
 
 	&_circle {
 		position: absolute;
+		padding-top: 0;
 		top: 6px;
 		left: 52%;
 	}
 }
 .posts-desc	{
 	text-align: left;
-	.posts-desc_circle{
+
+	&_circle{
 		max-width: 300px;
 		margin: 0 auto;
+		text-align:center;
 	}
 }
 
@@ -107,7 +117,7 @@
 		color: #cd9710;
 	}
 
-	.posts-desc__text_circle {
+	&_circle {
 		font-family: $font-italic;
 	}
 }
@@ -138,7 +148,12 @@
 	@include border-radius(50%);
 	overflow: hidden;
 	counter-reset: i;
+
+	&:hover {
+		opacity: 0.75;
+	}
 }
+
 .discussions__list{
 	counter-reset: i;
 	margin-bottom: 73px;

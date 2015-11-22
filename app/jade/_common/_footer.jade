@@ -1,19 +1,23 @@
 footer.footer
-	.container 
-		.footer__contacts
-			.footer__contacts-copyright
-				| &copy; «Рога и копыта инкорпорейтед»
-			.footer__contacts-phone
-				a(href="tel:+09991234567" title="phone").footer__contacts-num Тел.: +0 999 123-45-67
-		.footer__nav
-			+ul('footer__nav', nav_one, -1, true)
-			+ul('footer__nav', nav_two, -1, true)
-			+ul('footer__nav', nav_tree, -1, true)
-			+ul('footer__nav', nav_four, -1, true)
-			//- ul.footer__options-list
-			//- 	li.footer__options-item
-			//- .footer__left
-			//- 	a(href="#" title="").logo.logo_footer
-			//- 		img(src="../img/logo/logo_footer.png" alt="").logo__img
-			//- 		span.logo__text 
-			
+	.footer__top
+		.container
+			.footer-logo
+				a(href="#" title="На главную").logo
+					img(src="img/logo/Logo_footer.png" alt="Lafoy").logo__img
+					span.logo__text Lafoy
+			.footer-nav
+				+ul('footer-nav', fashion, -1, true)
+				+ul('footer-nav', relations, -1, true)
+				+ul('footer-nav', beauty, -1, true)
+				+ul('footer-nav', health, -1, true)
+				+ul('footer-nav', life, -1, true)
+				+ul('footer-nav', psychology, -1, true)
+				+ul('footer-nav', project, -1, true)
+				+ul('footer-nav', advertising, -1, true)
+				+ul('footer-nav', contacts, -1, true)
+	.footer__bottom
+		.container
+			.footer__copyright
+					| &copy;Lafoy. Женский онлайн-журнал о моде и красоте
+			.footer__developer Дизайн разработан в 
+				a(href="http://www.progressivemedia.ru/").footer__developer-link Progressive Media
