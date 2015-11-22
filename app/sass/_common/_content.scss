@@ -110,3 +110,75 @@
 		font-family: $font-italic;
 	}
 }
+
+.panel-right__banner {
+	position: relative;
+	background: #e8e8e8;
+	padding: 40px;
+	margin-bottom: 59px;
+}
+
+.panel-right__banner-link {
+	display: block;
+}
+
+.discussions__title {
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+.discussions__item {
+	@include clearfix;
+}
+
+.discussions__link-img {
+	float: left;
+	display: block;
+	@include border-radius(50%);
+	overflow: hidden;
+	counter-reset: i;
+}
+.discussions__list{
+	counter-reset: i;
+}
+
+.discussions__item {
+	position: relative;
+	margin-top: 20px;
+	padding-left: 20px;
+
+	&:first-child {
+		margin-top:0;
+	}
+
+	&:before {
+		display: block;
+		position: absolute;
+		top:0;
+		left:10px;
+		width: 24px;
+		height: 24px;
+		line-height: 24px;
+		counter-increment: i;
+		content: counter(i);
+		line-height: 24px;
+		@include border-radius(50%);
+		border: 3px solid #d6b25c;
+		background: #fff;
+		font-size: $font-size_main + 1px;
+	}
+}
+
+.discussions__text {
+	float: right;
+	text-align: left;
+	max-width: 242px;
+	max-height: 72px;
+	line-height: 26px;
+	overflow: hidden;
+	// white-space: nowrap;
+	// text-overflow: ellipsis;
+	// font-family: $font-italic;
+	font-size: $font-size_main + 3px;
+	color: $main_black_text;
+}
