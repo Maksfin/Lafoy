@@ -19,6 +19,7 @@
 
 .posts {
 	@include clearfix;
+	margin-bottom: 60px;
 }
 
 .container__right {
@@ -140,6 +141,7 @@
 }
 .discussions__list{
 	counter-reset: i;
+	margin-bottom: 73px;
 }
 
 .discussions__item {
@@ -180,5 +182,56 @@
 	// text-overflow: ellipsis;
 	// font-family: $font-italic;
 	font-size: $font-size_main + 3px;
+	color: $main_black_text;
+}
+
+.pagination {
+	text-transform: uppercase;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+}
+
+.pagination__prev {
+	float: left;
+	width: 49%;
+	display: block;
+	background: #d8d8d8;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top:22px;
+		left: 22px;
+		@include get-sprite($general-sprite, prev); 
+	}
+
+	&:hover {
+		opacity:0.8;
+	}	
+}
+
+.pagination__next {
+	float: right;
+	width: 49%;
+	display: block;
+	background: #d8d8d8;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top:22px;
+		right: 22px;
+		@include get-sprite($general-sprite, next); 
+	}	
+
+	&:hover {
+		opacity:0.8;
+	}
+}
+
+.pagination__text {
 	color: $main_black_text;
 }
