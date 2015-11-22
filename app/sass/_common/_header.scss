@@ -22,6 +22,55 @@
 	@include get-sprite($general-sprite, burger); 
 }
 
+.nav-menu__list {
+	width: 250px;
+	height: 1000px;
+	background: #000;
+	padding: 40px 0 0 48px;
+	color: #fff;
+	position: absolute;
+	z-index:2;
+	display: none;
+}
+
+.nav-menu__item, .nav-menu-drop__item {
+	margin-bottom: 30px;
+}
+
+.nav-menu-drop__item {
+	&:first-child {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			left:-25px;
+			@include get-sprite($general-sprite, back); 
+		}
+	}
+}
+
+// .nav-menu-drop__link {
+// 	display: block;
+// 	&:first-child {
+// 		color: #acacac;
+// 	}
+// }
+
+.nav-menu__link, .nav-menu-drop__link {
+	color: $main_white;
+	@include transition(.3s);
+	font-family: $font-medium;
+
+	&:hover {
+		color: #c99710;
+	}
+}
+
+.nav-menu-drop__list{
+	display: none;
+	@extend .nav-menu__list;
+}
+
 .logo {
 	margin: 13px 0 0 20px;
 	@include inlineblock(top);

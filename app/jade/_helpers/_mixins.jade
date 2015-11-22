@@ -11,3 +11,5 @@ mixin ul(className, items, activeElem, onlyList)
 				each item, index in items
 					li(class= className + "__item")
 						a(href="#" class= className + "__link" + ((activeElem === index) ? ' ' + className + '__link_active' : ''))= item
+
+					

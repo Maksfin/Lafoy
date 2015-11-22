@@ -51,6 +51,20 @@
 	}
 }
 
+.posts__link_gallery {
+	position: relative;
+
+	&:after {
+		content:'';
+		position: absolute;
+		top:10px;
+		right: 10px;
+		@include get-sprite($general-sprite, gallery); 
+
+	}
+}
+
+
 .posts__item {
 	@include inlineblock(top);
 	width: 30.8%;
@@ -176,6 +190,7 @@
 		width: 24px;
 		height: 24px;
 		line-height: 24px;
+		z-index: 1;
 		counter-increment: i;
 		content: counter(i);
 		line-height: 24px;
