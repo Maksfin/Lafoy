@@ -5,8 +5,108 @@
 
 .content__title {
 	font-size: $font-size_main + 25px; 
+	margin-bottom: 30px;
 }
 
 .container{
-	max-width: 1613px;
+	@include clearfix;
+}
+
+.container__left {
+	width: 76.5%;
+	float: left;
+}
+
+.posts {
+	@include clearfix;
+}
+
+.container__right {
+	width: 23.5%;
+	float: right;
+}
+
+.posts__link {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 17px;
+	@include transition(.4s);
+
+	&_circle {
+		@include border-radius(50%);
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 17px;
+	}
+
+	&:hover {
+		opacity: 0.75;
+	}
+}
+
+.posts__item {
+	@include inlineblock(top);
+	width: 30.8%;
+	margin:0 28px 60px 0;
+}
+
+.posts-info {
+	margin-bottom: 12px;
+	height: 20px;
+	position: relative;
+}
+
+.posts-info__text {
+	padding-top: 4px;
+	border-top: 1px solid $main_gold_line;
+	color: $main_gold_text;
+	text-transform: uppercase;
+	float: left;
+
+	&_circle {
+		position: absolute;
+   	top: 0;
+   	left: 28%;
+	}
+}
+
+.posts-info__views {
+	color: #8a8a8a;
+	font-size: $font-size_main - 1px;
+	float: right;
+
+	&:before{
+		content:'';
+		display: inline-block;
+		padding-right: 6px;
+		@include get-sprite($general-sprite, views); 
+	}
+
+	&_circle {
+		position: absolute;
+		top: 6px;
+		left: 52%;
+	}
+}
+.posts-desc	{
+	text-align: left;
+	.posts-desc_circle{
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+.posts-desc__text {
+	color: $main_black_text;
+	font-size: 26px;
+	line-height: 32px;
+	@include transition(.4s);
+
+	&:hover {
+		color: #cd9710;
+	}
+
+	.posts-desc__text_circle {
+		font-family: $font-italic;
+	}
 }

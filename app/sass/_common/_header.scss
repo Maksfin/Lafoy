@@ -1,9 +1,9 @@
-// .header-top {
-// 	position: relative;
-// 	height: 62px;
-// 	border-bottom: 1px solid #e8e8e8;
-// 	@include clearfix;
-// }
+.header-top {
+	position: relative;
+	height: 62px;
+	border-bottom: 1px solid #e8e8e8;
+	@include clearfix;
+}
 
 .header-top__left {
 	float:left;
