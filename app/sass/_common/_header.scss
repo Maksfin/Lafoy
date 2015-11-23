@@ -20,6 +20,12 @@
 .burger__icon {
 	@include center;
 	@include get-sprite($general-sprite, burger); 
+	@include transition(.4s);
+}
+
+.burger__icon_active {
+	@include center;
+	@include get-sprite($general-sprite, close); 
 }
 
 .nav-menu__list {
@@ -30,7 +36,7 @@
 	color: #fff;
 	position: absolute;
 	z-index:2;
-	display: none;
+	left: -250px;
 }
 
 .nav-menu__item, .nav-menu-drop__item {
@@ -40,6 +46,7 @@
 .nav-menu-drop__item {
 	&:first-child {
 		position: relative;
+		color: #acacac;
 		&:before {
 			content: '';
 			position: absolute;
@@ -67,8 +74,9 @@
 }
 
 .nav-menu-drop__list{
-	display: none;
 	@extend .nav-menu__list;
+	display: none;
+	left:0;
 }
 
 .logo {
@@ -160,6 +168,7 @@
 	height: 95px;
 	background-color: #626262;
 	color: #fff;
+	display: none;
 }
 
 .form__seach {
@@ -171,7 +180,7 @@
    line-height: 95px;
    font-family: $font-light;
    font-size: $font-size_main + 25px;
-   padding: 0 61px;
+   padding: 0 270px;
 }
 
 .form__submit {
