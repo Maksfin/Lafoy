@@ -30,7 +30,7 @@
 
 .nav-menu__list {
 	width: 250px;
-	height: 1000px;
+	height: 1500px;
 	background: #000;
 	padding: 40px 0 0 48px;
 	color: #fff;
@@ -56,11 +56,9 @@
 	}
 }
 
-// .nav-menu-drop__link {
+// .nav-menu-drop__item:first-of-type {
 // 	display: block;
-// 	&:first-child {
 // 		color: #acacac;
-// 	}
 // }
 
 .nav-menu__link, .nav-menu-drop__link {
