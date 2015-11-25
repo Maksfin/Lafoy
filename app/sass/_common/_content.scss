@@ -123,8 +123,8 @@
 
 .posts-desc__text {
 	color: $main_black_text;
-	@include fontSize(2.6);
-	line-height: 32px;
+	@include fontSize(2.2);
+	line-height: 26px;
 	@include transition(.4s);
 
 	&:hover {
