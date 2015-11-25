@@ -5,7 +5,7 @@ footer.footer
 				a(href="#" title="На главную").logo
 					img(src="img/logo/Logo_footer.png" alt="Lafoy").logo__img
 					span.logo__text Lafoy
-			.footer-nav
+			nav.footer-nav
 				+ul('footer-nav', fashion, -1, true)
 				+ul('footer-nav', relations, -1, true)
 				+ul('footer-nav', beauty, -1, true)
@@ -14,7 +14,8 @@ footer.footer
 				+ul('footer-nav', psychology, -1, true)
 				+ul('footer-nav', project, -1, true)
 				+ul('footer-nav', advertising, -1, true)
-				+ul('footer-nav', contacts, -1, true)
+				.footer-nav__last
+					+ul('footer-nav', contacts, -1, true)
 	.footer__bottom
 		.container
 			.footer__copyright

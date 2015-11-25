@@ -31,7 +31,7 @@
 	}
 }
 
-.footer-nav__list {
+.footer-nav__list, .footer-nav__last {
 	@include inlineblock(top);
 }
 
@@ -65,7 +65,7 @@
 	color: #818181;
 	height: 68px;
 	line-height: 68px;
-	font-size: $font-size_main - 1px;
+	@include fontSize(1.4);
 
 	.container {
 		border-top: 1px solid #444444;

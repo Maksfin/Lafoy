@@ -139,3 +139,9 @@
 		width: $sprite-width;
 	}
 }
+
+
+@mixin fontSize($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

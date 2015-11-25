@@ -5,7 +5,7 @@
 }
 
 .content__title {
-	font-size: $font-size_main + 25px; 
+	@include fontSize(4.0);
 	margin-bottom: 30px;
 }
 
@@ -93,7 +93,7 @@
 
 .posts-info__views {
 	color: #8a8a8a;
-	font-size: $font-size_main - 1px;
+	@include fontSize(1.4);
 	float: right;
 	padding-top: 6px;
 
@@ -123,7 +123,7 @@
 
 .posts-desc__text {
 	color: $main_black_text;
-	font-size: 26px;
+	@include fontSize(2.6);
 	line-height: 32px;
 	@include transition(.4s);
 
@@ -148,7 +148,7 @@
 }
 
 .discussions__title {
-	font-size: 32px;
+	@include fontSize(3.2);
 	margin-bottom: 30px;
 }
 
@@ -170,7 +170,7 @@
 
 .discussions__list{
 	counter-reset: i;
-	margin-bottom: 73px;
+	margin-bottom: 75px;
 }
 
 .discussions__item {
@@ -197,7 +197,7 @@
 		@include border-radius(50%);
 		border: 3px solid #d6b25c;
 		background: #fff;
-		font-size: $font-size_main + 1px;
+		@include fontSize(1.6);
 	}
 }
 
@@ -211,7 +211,7 @@
 	// white-space: nowrap;
 	// text-overflow: ellipsis;
 	// font-family: $font-italic;
-	font-size: $font-size_main + 3px;
+	@include fontSize(1.8);
 	color: $main_black_text;
 }
 

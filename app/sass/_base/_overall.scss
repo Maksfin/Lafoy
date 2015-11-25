@@ -15,9 +15,11 @@ img {
 html, body {
 	width:100%;
 	height:100%;
+	font-size: 62.5%;
 }
 body {
-	font: $font-size_main $font-main;
+	font-family: $font-main;
+	@include fontSize(1.5);
 	color: $main_black_text;
 }
 

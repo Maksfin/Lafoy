@@ -7,6 +7,43 @@ block content
 	article.content-wrapper
 		h1.content__title Красота
 		.container
+			.container__right
+				aside.panel-right
+					.panel-right__banner
+						a(href="#").panel-right__banner-link
+							img(src="img/photo/banner_strenesse.jpg" alt="Strenesse").panel-right__img
+					.discussions
+						h2.discussions__title Cамое обсуждаемое
+						ol.discussions__list
+							li.discussions__item
+								a(href="#").discussions__link-img
+									img(src="img/photo/descus_one.jpg" alt="Что нужно знать...").discusions__img
+								a(href="#").discussions__text
+									| Что нужно знать о персонализированной косметике IOMA
+							li.discussions__item
+								a(href="#").discussions__link-img
+									img(src="img/photo/descus_two.jpg" alt="После тренировки...").discusions__img
+								a(href="#").discussions__text
+									| После тренировки протеиновый батончик можно заменить бургером
+							li.discussions__item
+								a(href="#").discussions__link-img
+									img(src="img/photo/descus_three.jpg" alt="Доказано: уровень дохода...").discusions__img
+								a(href="#").discussions__text
+									| Доказано: уровень дохода влияет на нашу склонность к выпивке
+							li.discussions__item
+								a(href="#").discussions__link-img
+									img(src="img/photo/descus_four.jpg" alt="Лицом L’Oréal Paris...").discusions__img
+								a(href="#").discussions__text
+									| Лицом L’Oréal Paris впервыестала модель азиатского происхождения
+					.panel-right__post
+						a(href="#").posts__link
+							img(src="img/photo/5_methods.jpg" alt="5 нескучных способов...")
+						.posts-info
+							a(href="#").posts-info__text Макияж
+							.posts-info__views 1 255
+						.posts-desc
+							a(href="#").posts-desc__text
+								| 5 нескучных способов использовать набор бежевых теней				
 			.container__left
 				ul.posts
 					li.posts__item
@@ -117,52 +154,6 @@ block content
 						.posts-desc
 							a(href="#").posts-desc__text
 								| 5 нескучных способов использовать набор бежевых теней
-					li.posts__item.posts__item_one			
-						a(href="#").posts__link
-								img(src="img/photo/5_methods.jpg" alt="5 нескучных способов...")
-							.posts-info
-								a(href="#").posts-info__text Макияж
-								.posts-info__views 1 255
-							.posts-desc
-								a(href="#").posts-desc__text
-									| 5 нескучных способов использовать набор бежевых теней					
-			.container__right
-				aside.panel-right
-					.panel-right__banner
-						a(href="#").panel-right__banner-link
-							img(src="img/photo/banner_strenesse.jpg" alt="Strenesse").panel-right__img
-					.discussions
-						h2.discussions__title Cамое обсуждаемое
-						ol.discussions__list
-							li.discussions__item
-								a(href="#").discussions__link-img
-									img(src="img/photo/descus_one.jpg" alt="Что нужно знать...").discusions__img
-								a(href="#").discussions__text
-									| Что нужно знать о персонализированной косметике IOMA
-							li.discussions__item
-								a(href="#").discussions__link-img
-									img(src="img/photo/descus_two.jpg" alt="После тренировки...").discusions__img
-								a(href="#").discussions__text
-									| После тренировки протеиновый батончик можно заменить бургером
-							li.discussions__item
-								a(href="#").discussions__link-img
-									img(src="img/photo/descus_three.jpg" alt="Доказано: уровень дохода...").discusions__img
-								a(href="#").discussions__text
-									| Доказано: уровень дохода влияет на нашу склонность к выпивке
-							li.discussions__item
-								a(href="#").discussions__link-img
-									img(src="img/photo/descus_four.jpg" alt="Лицом L’Oréal Paris...").discusions__img
-								a(href="#").discussions__text
-									| Лицом L’Oréal Paris впервыестала модель азиатского происхождения
-					//- .panel-right__post
-					//- 	a(href="#").posts__link
-					//- 		img(src="img/photo/5_methods.jpg" alt="5 нескучных способов...")
-					//- 	.posts-info
-					//- 		a(href="#").posts-info__text Макияж
-					//- 		.posts-info__views 1 255
-					//- 	.posts-desc
-					//- 		a(href="#").posts-desc__text
-					//- 			| 5 нескучных способов использовать набор бежевых теней
 			.pagination
 				a(href="#").pagination__prev
 					.pagination__text Предыдущая страница
