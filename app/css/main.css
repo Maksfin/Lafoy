@@ -817,7 +817,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   vertical-align: top;
   width: 30.8%;
-  margin: 0 28px 60px 0;
+  margin: 0 28px 70px 0;
 }
 
 .posts-info {
@@ -905,14 +905,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
-.discussions__item:before, .discussions__item:after {
-  content: "";
-  display: table;
-}
-.discussions__item:after {
-  clear: both;
-}
-
 .discussions__link-img {
   float: left;
   display: block;
@@ -931,13 +923,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .discussions__list {
   counter-reset: i;
-  margin-bottom: 75px;
+  margin-bottom: 38px;
 }
 
 .discussions__item {
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-left: 20px;
+}
+.discussions__item:before, .discussions__item:after {
+  content: "";
+  display: table;
+}
+.discussions__item:after {
+  clear: both;
 }
 .discussions__item:first-child {
   margin-top: 0;
@@ -1147,6 +1146,10 @@ h1, h2, h3, h4, h5, h6 {
   .discussions__text {
     max-width: 216px;
   }
+
+  .discussions__list {
+    margin-bottom: 54px;
+  }
 }
 @media screen and (max-width: 1574px) and (min-width: 1430px) {
   .container {
@@ -1171,6 +1174,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .discussions__text {
     max-width: 70%;
+  }
+
+  .discussions__item {
+    margin-top: 25px;
   }
 
   .discussions__title {
@@ -1209,6 +1216,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-top__list {
     width: 60%;
+  }
+
+  .discussions__item {
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 1304px) and (min-width: 1106px) {
@@ -1271,6 +1282,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 60px;
     font-size: 32px;
     font-size: 3.2rem;
+  }
+
+  .discussions__item {
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 1105px) and (min-width: 1020px) {
@@ -1397,7 +1412,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .discussions__item {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .discussions__link-img {

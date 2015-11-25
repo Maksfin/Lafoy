@@ -9,6 +9,7 @@
 	.panel-right__banner {padding: 7%}
 	.footer__bottom .container {width: 92%}
 	.discussions__text {max-width: 216px}
+	.discussions__list {margin-bottom: 54px}
 }
 
 @media screen and (max-width:1574px) and (min-width: 1430px) {
@@ -18,6 +19,7 @@
 	.posts__item {width: 30.1%}
 	.panel-right__banner {padding: 3%}
 	.discussions__text {max-width: 70%}
+	.discussions__item {margin-top: 25px}
 	.discussions__title {@include fontSize(3.0);}
 	.panel-right__post {display: none}
 	.nav-top__list {width: 50%}
@@ -30,6 +32,7 @@
 	.posts__item {width: 46%}
 	.panel-right__post {display: none}
 	.nav-top__list {width: 60%}
+	.discussions__item {margin-top: 25px}
 }
 
 @media screen and (max-width: 1304px) and (min-width:1106px){
@@ -47,6 +50,7 @@
 	.discussions__title {@include fontSize(2.6);}
 	.form, .form__submit {height: 60px}
 	.form__seach {height: 60px;line-height: 60px;@include fontSize(3.2);}
+	.discussions__item {margin-top: 25px}
 }
 
 @media screen and (max-width: 1105px) and (min-width:1020px){
@@ -81,7 +85,7 @@
 	.footer-nav__last {display: none}
 	.footer {height: 410px}
 	.panel-right__banner {padding: 0}
-	.discussions__item {margin-top: 30px;}
+	.discussions__item {margin-top: 60px;}
 	.discussions__link-img {margin-top: 10px;}
 	.discussions__list{margin-bottom: 0}
 	.pagination {width: 95%; @include fontSize(1.3);}

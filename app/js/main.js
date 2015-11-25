@@ -30,16 +30,19 @@ var mainModule = (function() {
 			$this = $(this),
 			icon = $this.find('.burger__icon'),
 			menu = $('.nav-menu__list'),
+			menuDrop = $('.nav-menu-drop__list'),
 			duration = 400;
 
 			if(!$this.hasClass('active')) {
 				menu.animate({'left' : '0px'}, duration);
+				menuDrop.animate({'left' : '0px'}, duration);
 				$this.addClass('active');
 				icon.addClass('burger__icon_active');
 				_displaySeach('close');
 
 			} else {
 				menu.animate({'left' : '-250px'}, duration);
+				menuDrop.animate({'left' : '-250px'}, duration);
 				$this.removeClass('active');
 				icon.removeClass('burger__icon_active');
 			}

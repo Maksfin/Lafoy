@@ -68,7 +68,7 @@
 .posts__item {
 	@include inlineblock(top);
 	width: 30.8%;
-	margin:0 28px 60px 0;
+	margin:0 28px 70px 0;
 }
 
 .posts-info {
@@ -152,10 +152,6 @@
 	margin-bottom: 30px;
 }
 
-.discussions__item {
-	@include clearfix;
-}
-
 .discussions__link-img {
 	float: left;
 	display: block;
@@ -170,12 +166,13 @@
 
 .discussions__list{
 	counter-reset: i;
-	margin-bottom: 75px;
+	margin-bottom: 38px;
 }
 
 .discussions__item {
+	@include clearfix;
 	position: relative;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding-left: 20px;
 
 	&:first-child {
