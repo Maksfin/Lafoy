@@ -714,8 +714,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 95px;
   line-height: 95px;
   font-family: "RobotoLight";
-  font-size: 32px;
-  font-size: 3.2rem;
+  font-size: 38px;
+  font-size: 3.8rem;
   padding: 0 61px;
 }
 
@@ -1151,7 +1151,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 54px;
   }
 }
-@media screen and (max-width: 1574px) and (min-width: 1430px) {
+@media screen and (max-width: 1574px) and (min-width: 1460px) {
   .container {
     width: 90%;
   }
@@ -1193,7 +1193,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
   }
 }
-@media screen and (max-width: 1429px) and (min-width: 1305px) {
+@media screen and (max-width: 1459px) and (min-width: 1305px) {
   .container {
     width: 86%;
   }
@@ -1274,12 +1274,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .form, .form__submit {
-    height: 60px;
+    height: 70px;
   }
 
   .form__seach {
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
     font-size: 32px;
     font-size: 3.2rem;
   }
@@ -1348,14 +1348,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .form, .form__submit {
-    height: 50px;
+    height: 60px;
   }
 
   .form__seach {
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    font-size: 2.4rem;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 1045px) and (min-width: 850px) {
@@ -1368,8 +1368,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .discussions__title {
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 26px;
+    font-size: 2.6rem;
   }
 
   .container__left {
@@ -1463,14 +1463,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .form, .form__submit {
-    height: 40px;
+    height: 50px;
   }
 
   .form__seach {
-    height: 40px;
-    line-height: 40px;
-    font-size: 24px;
-    font-size: 2.4rem;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media screen and (max-width: 849px) and (min-width: 750px) {
@@ -1484,8 +1484,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .discussions__title {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 23px;
+    font-size: 2.3rem;
   }
 
   .container__left {
@@ -1579,14 +1579,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .form, .form__submit {
-    height: 40px;
+    height: 50px;
   }
 
   .form__seach {
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    font-size: 2rem;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media screen and (max-width: 749px) {
@@ -1639,15 +1639,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .form, .form__submit {
-    height: 40px;
+    height: 50px;
   }
 
   .form__seach {
     width: 72%;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    font-size: 2rem;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .footer-nav {
@@ -1656,7 +1656,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .footer-nav__item {
-    margin-left: 6px;
+    margin-left: 2px;
   }
 
   .posts-desc {

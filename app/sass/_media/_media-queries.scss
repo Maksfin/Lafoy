@@ -12,7 +12,7 @@
 	.discussions__list {margin-bottom: 54px}
 }
 
-@media screen and (max-width:1574px) and (min-width: 1430px) {
+@media screen and (max-width:1574px) and (min-width: 1460px) {
 	.container {width: 90%}
 	.container__right {width: 23.3%}
 	.container__left {width: 76.7%}
@@ -25,7 +25,7 @@
 	.nav-top__list {width: 50%}
 }
 
-@media screen and (max-width: 1429px) and (min-width:1305px){
+@media screen and (max-width: 1459px) and (min-width:1305px){
 	.container {width: 86%}
 	.container__right {width: 31.5%}
 	.container__left {width: 68.5%}
@@ -48,8 +48,8 @@
 	.footer-nav__last {display: none}
 	.footer {height: 410px}
 	.discussions__title {@include fontSize(2.6);}
-	.form, .form__submit {height: 60px}
-	.form__seach {height: 60px;line-height: 60px;@include fontSize(3.2);}
+	.form, .form__submit {height: 70px}
+	.form__seach {height: 70px;line-height: 70px;@include fontSize(3.2);}
 	.discussions__item {margin-top: 25px}
 }
 
@@ -68,14 +68,14 @@
 	.panel-right__banner {padding: 0}
 	.discussions__item {margin-top: 30px;}
 	.discussions__link-img {margin-top: 10px;}
-	.form, .form__submit {height: 50px}
-	.form__seach {height: 50px;line-height: 50px;@include fontSize(2.4);}
+	.form, .form__submit {height: 60px}
+	.form__seach {height: 60px;line-height: 60px;@include fontSize(2.8);}
 }
 
 @media screen and (max-width: 1045px) and (min-width:850px){
 	.container {width: 72%}
 	.discussions__text { max-width: 68%}
-	.discussions__title {@include fontSize(3.2);}
+	.discussions__title {@include fontSize(2.6);}
 	.container__left {float: none;width: auto}
 	.container__right {width: 45%; margin-right: 30px;}
 	.posts__item {width: 44.9%}
@@ -97,14 +97,14 @@
 	.footer .container {width: 72%;}
 	.footer__bottom .container {width: 68%; margin: 0 14%}
 	.footer {height: 330px}
-	.form, .form__submit {height: 40px}
-	.form__seach {height: 40px;line-height: 40px;@include fontSize(2.4)}
+	.form, .form__submit {height: 50px}
+	.form__seach {height: 50px;line-height: 50px;@include fontSize(2.6)}
 }
 
 @media screen and (max-width: 849px) and (min-width:750px){
 	.container {width: 70%}
 	.discussions__text {max-width: 60%; max-height: 148px;}
-	.discussions__title {@include fontSize(2.4);}
+	.discussions__title {@include fontSize(2.3);}
 	.container__left {float: none;width: auto}
 	.container__right {width: 45%; margin-right: 30px;}
 	.posts__item {width: 43.6%}
@@ -126,8 +126,8 @@
 	.footer .container {width: 70%}
 	.footer__bottom .container {width: 68%; margin: 0 15%}
 	.footer {height: 330px}
-	.form, .form__submit {height: 40px}
-	.form__seach {height: 40px;line-height: 40px;@include fontSize(2.0);}
+	.form, .form__submit {height: 50px}
+	.form__seach {height: 50px;line-height: 50px;@include fontSize(2.4);}
 }
 
 @media screen and (max-width:749px){
@@ -143,10 +143,10 @@
 	.footer__developer {display: none}
 	.footer .container {width: 97%;}
 	.footer__bottom {overflow: hidden}
-	.form, .form__submit {height: 40px}
-	.form__seach {width: 72%; height: 40px;line-height: 40px;@include fontSize(2.0);}
+	.form, .form__submit {height: 50px}
+	.form__seach {width: 72%; height: 50px;line-height: 50px;@include fontSize(2.4);}
 	.footer-nav {width: auto; margin-top: 30px}
-	.footer-nav__item {margin-left: 6px;}
+	.footer-nav__item {margin-left: 2px;}
 	.posts-desc {text-align: center}
 	.posts-info {margin: 0 10px 10px 10px}
 }
